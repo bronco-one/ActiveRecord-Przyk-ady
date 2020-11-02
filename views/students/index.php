@@ -1,6 +1,9 @@
 
-
-<table class="table">
+<?php
+$this->title='Studenci';
+?>
+<p><h1 class="display-3 alert-heading">Studenci</h1></p><br/>
+<table class="table table-striped">
     <tr>
         <th>Imię</th>
         <th>Nazwisko</th>

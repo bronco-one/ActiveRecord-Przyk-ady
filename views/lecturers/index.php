@@ -1,3 +1,7 @@
+
+<?php
+$this->title='Wykładowcy';
+?>
 <p><h1 class="display-3 alert-heading">Wykładowcy</h1></p><br/>
 <table class="table table-striped ">
     <thead class="thead-dark">
