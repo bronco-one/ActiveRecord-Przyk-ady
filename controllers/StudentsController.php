@@ -11,8 +11,9 @@ class StudentsController extends Controller{
     
     public function actionIndex() {
         
-        $students = Students::find()->all();
-        return $this->render('index',['students'=>$students]);
+        
+        $students = Students::find()->orderBy('last_name ASC')->all();
+        return $this->render('index',['students'=>$students,]);
     }
 }
 
