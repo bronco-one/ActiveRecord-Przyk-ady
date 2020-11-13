@@ -10,7 +10,7 @@ class LecturersController extends Controller{
     
     public function actionIndex() {
         
-        $lecturers = Lecturers::find()->all();
+        $lecturers = Lecturers::find()->orderBy('last_name')->all();
         
         return $this->render('index',['lecturers'=>$lecturers]);
     }

@@ -40,7 +40,8 @@ AppAsset::register($this);
         'items' => [
             ['label' => 'Studenci', 'url' => ['/students/index']],
             ['label' => 'Wykładowcy', 'url' => ['/lecturers/index']],
-            ['label' => 'Oceny', 'url' => ['/grades/index']],
+            ['label' => 'Przedmioty', 'url' => ['/subjects/index']],
+            ['label' => 'Średnia ocen', 'url' => ['/students/average']],
             ['label' => 'Contact', 'url' => ['/site/contact']],
             Yii::$app->user->isGuest ? (
                 ['label' => 'Login', 'url' => ['/site/login']]

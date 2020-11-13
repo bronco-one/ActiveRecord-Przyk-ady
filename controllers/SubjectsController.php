@@ -11,10 +11,9 @@ class SubjectsController extends Controller {
     
     public function actionIndex() {
         
-        $subjects = Subjects::find()->all();
-        $lecturers = Lecturers::find()->all();
+        $subjects = Subjects::find()->with('lecturer')->orderBy('name')->all();
         
-        return $this->render('index',['subjects'=>$subjects,'lecturers'=>$lecturers]);
+        return $this->render('index',['subjects'=>$subjects]);
     }
 }
 

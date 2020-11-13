@@ -10,5 +10,9 @@ class Subjects extends \yii\db\ActiveRecord {
         
         return '{{subjects}}';
     }
+    public function getLecturer() {
+        
+        return $this->hasOne(Lecturers::className(), ['id_lec'=>'id_lec']);
+    }
 }
 
